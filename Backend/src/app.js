@@ -3,7 +3,7 @@ import cors from "cors";
 import authRoutes from "./routes/auth.routes.js";
 import attractionRoutes from "./routes/attraction.routes.js";
 import favoriteRoutes from "./routes/favorite.routes.js";
-
+import hotelRoutes from "./routes/hotel.routes.js";
 
 const app = express();
 
@@ -12,6 +12,7 @@ app.use(cors());
 app.use("/api/auth", authRoutes);
 app.use("/api/attractions", attractionRoutes);
 app.use("/api/favorites", favoriteRoutes);
+app.use("/api/hotels", hotelRoutes);
 app.get("/", (req, res) => {
   res.json({
     success: true,
