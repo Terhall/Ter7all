@@ -59,6 +59,18 @@ const hotelSchema = new mongoose.Schema(
     longitude: {
       type: Number,
     },
+    averageRating: {
+  type: Number,
+  default: 0,
+  min: 0,
+  max: 5,
+},
+
+reviewsCount: {
+  type: Number,
+  default: 0,
+  min: 0,
+},
   },
   {
     timestamps: true,

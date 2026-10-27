@@ -83,7 +83,18 @@ const attractionSchema = new mongoose.Schema(
       min: 0,
       max: 5,
     },
+averageRating: {
+  type: Number,
+  default: 0,
+  min: 0,
+  max: 5,
+},
 
+reviewsCount: {
+  type: Number,
+  default: 0,
+  min: 0,
+},
     isFeatured: {
       type: Boolean,
       default: false,
